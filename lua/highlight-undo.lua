@@ -8,7 +8,7 @@ local M = {
     hlgroup = 'HighlightUndo',
     duration = 300,
   },
-  timer = (vim.uv or vim.loop).new_timer(),
+  timer = require('luv').new_timer(),
   should_detach = true,
 }
 
